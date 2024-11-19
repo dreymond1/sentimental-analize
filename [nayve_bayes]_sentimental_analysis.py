@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/111K2Ml_CVvKpnkMXaJfhzjhWxGXIizqm
 """
 
-!pip install flask-ngrok
+pip install flask-ngrok
 
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -89,11 +89,11 @@ df_resultado = pd.DataFrame({
 print(df_resultado)
 
 
-'''exemplo = df_2['Comentário'][0]
+"""exemplo = df_2['Comentário'][0]
 sentimento = prever_sentimento(exemplo)
-print(f"O sentimento do texto '{exemplo}' é: {sentimento}")'''
+print(f"O sentimento do texto '{exemplo}' é: {sentimento}")"""
 
-df_resultado.to_csv('resultados_sentimentos.csv', index=False, encoding='iso-8859-1')
+#df_resultado.to_csv('resultados_sentimentos.csv', index=False, encoding='iso-8859-1')
 
 """## Visualizando
 
