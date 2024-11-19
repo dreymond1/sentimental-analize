@@ -98,23 +98,3 @@ df_resultado.to_csv('resultados_sentimentos.csv', index=False, encoding='iso-885
 """## Visualizando
 
 """
-
-import tkinter as tk
-
-def process_text():
-    text = entry.get("1.0", tk.END)
-    result = prever_sentimento(text.strip())
-    result_label.config(text=f"Sentimento: {result}")
-
-app = tk.Tk()
-app.title("Análise de Sentimentos")
-
-tk.Label(app, text="Digite o texto:").pack()
-entry = tk.Text(app, height=5, width=40)
-entry.pack()
-
-tk.Button(app, text="Analisar", command=process_text).pack()
-result_label = tk.Label(app, text="")
-result_label.pack()
-
-app.mainloop()
