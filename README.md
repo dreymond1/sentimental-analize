@@ -64,4 +64,18 @@ Este projeto utiliza **Machine Learning** e **Processamento de Linguagem Natural
 ## 🔍 Estrutura dos Arquivos
 
 - **`train_nb.csv`**: Dados de treino rotulados para treinar o modelo.
-- **`
+- **`test_nb.csv`**: Dados para testar o modelo e gerar previsões.
+- **`resultados_sentimentos.csv`**: Resultado final com comentários e seus respectivos sentimentos previstos.
+- **`script.py`**: Script principal contendo todo o código.
+
+---
+
+## ⚡ Exemplos de Uso
+
+- Para prever o sentimento de um único comentário no console:
+  ```python
+  exemplo = "Adorei este produto! Recomendo."
+  sentimento = prever_sentimento(exemplo)
+  print(f"O sentimento é: {sentimento}")
+- Para usar com um DataFrame maior, os resultados serão armazenados automaticamente.
+  
