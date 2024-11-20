@@ -8,7 +8,6 @@ Este projeto utiliza **Machine Learning** e **Processamento de Linguagem Natural
 - Previsão do sentimento de novos comentários.
 - Geração de um DataFrame com resultados de previsões.
 - Exportação dos resultados para um arquivo CSV.
-- Integração de um servidor **Flask** (com **ngrok**) para transformar o modelo em uma API acessível.
 
 ---
 
@@ -18,8 +17,6 @@ Este projeto utiliza **Machine Learning** e **Processamento de Linguagem Natural
   - Pandas
   - Scikit-learn
   - NLTK
-  - Flask
-  - Flask-ngrok
 - **Machine Learning**: Multinomial Naive Bayes
 - **Processamento de Texto**: Stopwords e vetorização com CountVectorizer
 
@@ -50,10 +47,7 @@ Este projeto utiliza **Machine Learning** e **Processamento de Linguagem Natural
      ```
    - O script exibirá a acurácia e o relatório de classificação no console, além de gerar um DataFrame com os resultados.
 
-3. **API Flask**
-   - Para usar a API com Flask e ngrok, habilite a integração e configure a rota para enviar textos e receber previsões.
-
-4. **Salvar Resultados**
+3. **Salvar Resultados**
    - Ao final da execução, os resultados das previsões podem ser salvos em um arquivo CSV:
      ```bash
      df_resultado.to_csv('resultados_sentimentos.csv', index=False, encoding='iso-8859-1')
